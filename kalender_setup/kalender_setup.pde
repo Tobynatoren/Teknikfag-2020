@@ -1,17 +1,16 @@
 void setup() {
-  size(735, 450);
+  size(500, 500);
   background(255);
   textAlign(CENTER, CENTER);
   smooth();
 
-  int N = 7;
+  int N = 9;
 
   for (int row = 0; row < N; row++) {
-    for (int col = 1; col < N; col++) {
+    for (int col = 0; col < N; col++) {
 
-      fill(255, 255, 255);
-      noStroke();
-      ellipse(row*650/N+850/N, col*500/N+250/N, 15, 15);
+      fill(255, 0, 0);
+      ellipse(row*500/N+250/N, col*500/N+250/N, 10, 10);
     }
   }
 }
