@@ -1,5 +1,5 @@
 void setup() {
-  size(735, 450);
+  fullScreen();
   background(255);
   textAlign(CENTER, CENTER);
   smooth();
