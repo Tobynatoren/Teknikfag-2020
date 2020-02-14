@@ -8,11 +8,11 @@ void setup() {
 
   int N = 9;
 
-  for (int row = 0; row < N; row++) {
-    for (int col = 0; col < N; col++) {
+  for (int row = 0; row < 7; row++) {
+    for (int col = 0; col < 6; col++) {
 
-      fill(255, 0, 0);
-      ellipse(row*500/N+250/N, col*500/N+250/N, 10, 10);
+      fill(255, 255, 255);
+      rect(row*2000/N+1500/N, col*1300/N+500/N, 40, 40);
     }
   }
 }

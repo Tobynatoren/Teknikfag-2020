@@ -12,7 +12,7 @@ rect(0, 0, width, 100);
 
 PFont myFont;
 createFont("[105]",80);
-  textFont(myFont);
+//  textFont(myFont);
   textAlign(CENTER, CENTER);
   text("!@#$%", width/2, height/2);
 textMode(CENTER);
