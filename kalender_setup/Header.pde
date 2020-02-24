@@ -25,6 +25,7 @@ void draw() {
   text("Jan.", 40, 40);
 
   {
+    // Ugedage
     textSize(20);
     fill(0);
     text("M", 175, 130);
@@ -35,4 +36,13 @@ void draw() {
     text("L", 1075, 130);
     text("S", 1255, 130);
   }
+  // Ugenumre
+  textSize(14);
+  fill(0);
+  text("Uge 1", 75, 230);
+  text("Uge 2", 75, 330);
+  text("Uge 3", 75, 430);
+  text("Uge 4", 75, 530);
+  text("Uge 5", 75, 630);
+  text("Uge 6", 75, 730);
 }
