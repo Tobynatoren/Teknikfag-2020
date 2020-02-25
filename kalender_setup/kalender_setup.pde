@@ -7,13 +7,17 @@ void setup() {
   smooth();
 
   int N = 10;
+  int dag= 1;
 
-  for (int row = 0; row < 7; row++) {
-    for (int col = 0; col < 7; col++) {
+  for (int col = 0; col < 5; col++) {
+    for (int row = 0; row < 7; row++) {
 
-      fill(255, 255, 255);
-      // noStroke();
-      rect(row*1800/N+1600/N, col*1000/N+1100/N, 30, 30);
+      textSize(20);
+      fill(0);
+      text(dag, row*2000/N+2200/N, col*1500/N+2000/N);
+      dag += 1;
+      if (dag == 32)
+        dag = 1;
     }
   }
 }
