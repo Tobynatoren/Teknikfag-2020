@@ -1,7 +1,7 @@
-int x = month();
+int x = month(), m, h, d, mdr, y;
 String[] Mdr = {"Januar", "Febuar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December"};
 int[] tal = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-float m, h, d, mdr, y; 
+
 
 void setup() {
   fullScreen();
@@ -16,39 +16,41 @@ void draw() {
   mdr = month();
   y = year();
 
-
   fill(80, 80, 80);
   rect(0, 0, width, 100);
+
 
   for (int i = 0; i < Mdr.length; i++) {
     if (x == tal[i]) {
       fill(0);
-      text(Mdr[i], 50
-      , 50);
+      textAlign(LEFT, CENTER);
+      textSize(75);
+      text(Mdr[i], 50, 50);
+      text(h, 1690, 50);
+      text(":", 1780, 45);
+      text(m, 1800, 50);
+      text(y, 270, 50);
+    }
 
-      textAlign(CENTER, CENTER);
-      smooth();
 
-      int N = 10;
-      int dag = 1;
+    textAlign(CENTER, CENTER);
+    smooth();
 
-      for (int col = 0; col < 5; col++) {
-        for (int row = 0; row < 7; row++) {
+    int N = 10;
+    int dag = 1;
 
-          textSize(20);
-          fill(0);
-          text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
-          dag += 1;
-          if (dag == 32)
-            dag = 1;
-        }
+    for (int col = 0; col < 5; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        if (dag == 32)
+          dag = 1;
       }
     }
   }
-  fill(0);
-  text(h, 50, 100);
-  text(m, 50, 500);
-  text(y, 50, 700);
 
   {
     // Ugedage
@@ -70,8 +72,4 @@ void draw() {
   text("Uge 3", 75, 590);
   text("Uge 4", 75, 770);
   text("Uge 5", 75, 950);
-  
-  if(keyPressed){
-   mdr++; 
-  }
 }
