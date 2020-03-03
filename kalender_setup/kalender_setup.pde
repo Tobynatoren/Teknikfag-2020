@@ -1,5 +1,5 @@
 int x = month(), m, h, d, mdr, y;
-String[] Mdr = {"Januar", "Febuar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December"};
+String[] Mdr = {"Jan.", "Feb.", "Mar.", "Apr.", "Maj.", "Jun.", "Jul.", "Aug.", "Sep.", "Okt.", "Nov.", "Dec."};
 int[] tal = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 
 
@@ -19,6 +19,20 @@ void draw() {
   fill(80, 80, 80);
   rect(0, 0, width, 100);
 
+  if (keyPressed) {
+    if (key == 'p') {
+      text(x++, 50, 50);
+    }
+    if (key == 'o') {
+      text(x--, 50, 50);
+    }
+    if (x == 13) {
+      x = 1;
+    }
+    if (x == 0) {
+      x = 12;
+    }
+  }
 
   for (int i = 0; i < Mdr.length; i++) {
     if (x == tal[i]) {
