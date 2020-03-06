@@ -1,5 +1,5 @@
 int x = month(), m, h, d, mdr, y;
-String[] Mdr = {"Jan.", "Feb.", "Mar.", "Apr.", "Maj.", "Jun.", "Jul.", "Aug.", "Sep.", "Okt.", "Nov.", "Dec."};
+String[] Mdr = {"Januar", "Febuar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December"};
 int[] tal = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 
 
@@ -19,21 +19,6 @@ void draw() {
   fill(80, 80, 80);
   rect(0, 0, width, 100);
 
-  if (keyPressed) {
-    if (key == 'p') {
-      text(x++, 50, 50);
-    }
-    if (key == 'o') {
-      text(x--, 50, 50);
-    }
-    if (x == 13) {
-      x = 1;
-    }
-    if (x == 0) {
-      x = 12;
-    }
-    delay(500);
-  }
 
   for (int i = 0; i < Mdr.length; i++) {
     if (x == tal[i]) {
@@ -44,15 +29,12 @@ void draw() {
       text(h, 1690, 50);
       text(":", 1780, 45);
       text(m, 1800, 50);
-      text(y, 240, 50);
+      text(y, 270, 50);
     }
-  }
 
 
-  textAlign(CENTER, CENTER);
-  smooth();
-
-  if (x == 6) {
+    textAlign(CENTER, CENTER);
+    smooth();
 
     int N = 10;
     int dag = 1;
@@ -64,16 +46,11 @@ void draw() {
         fill(0);
         text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
         dag += 1;
-        fill(255);
-        noStroke();
-        rect(600, 800, 2000, 1000);
-        if (dag == 31) {
+        if (dag == 32)
           dag = 1;
-        }
       }
     }
   }
-
 
   {
     // Ugedage
