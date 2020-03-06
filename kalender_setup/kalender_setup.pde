@@ -52,12 +52,112 @@ void draw() {
   textAlign(CENTER, CENTER);
   smooth();
 
-  if (x == 6) {
+  // Januar
+  if (x == 1) {
 
     int N = 10;
     int dag = 1;
 
-    for (int col = 0; col < 5; col++) {
+    for (int col = 0; col < 6; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        fill(255);
+        noStroke();
+        rect(600, 800, 2000, 1000);
+        if (dag == 32) {
+          dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 1", 75, 230);
+          text("Uge 2", 75, 410);
+          text("Uge 3", 75, 590);
+          text("Uge 4", 75, 770);
+          text("Uge 5", 75, 950);
+          text("Uge 6", 75, 1140);
+        }
+      }
+    }
+  }
+
+  // Februar
+  if (x == 2) {
+
+    int N = 10;
+    int dag = 1;
+
+    for (int col = 0; col < 6; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        fill(255);
+        noStroke();
+        rect(600, 800, 2000, 1000);
+        if (dag == 30) {
+          dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 5", 75, 230);
+          text("Uge 6", 75, 410);
+          text("Uge 7", 75, 590);
+          text("Uge 8", 75, 770);
+          text("Uge 9", 75, 950);
+          text("Uge 10", 75, 1140);
+        }
+      }
+    }
+  }
+
+  // Marts
+  if (x == 3) {
+
+    int N = 10;
+    int dag = 1;
+
+    for (int col = 0; col < 6; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        fill(255);
+        noStroke();
+        rect(600, 800, 2000, 1000);
+        if (dag == 32) {
+          dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 9", 75, 230);
+          text("Uge 10", 75, 410);
+          text("Uge 11", 75, 590);
+          text("Uge 12", 75, 770);
+          text("Uge 13", 75, 950);
+          text("Uge 14", 75, 1140);
+        }
+      }
+    }
+  }
+
+  // April
+  if (x == 4) {
+
+    int N = 10;
+    int dag = 1;
+
+    for (int col = 0; col < 6; col++) {
       for (int row = 0; row < 7; row++) {
 
         textSize(20);
@@ -69,11 +169,284 @@ void draw() {
         rect(600, 800, 2000, 1000);
         if (dag == 31) {
           dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 14", 75, 230);
+          text("Uge 15", 75, 410);
+          text("Uge 16", 75, 590);
+          text("Uge 17", 75, 770);
+          text("Uge 18", 75, 950);
+          text("Uge 19", 75, 1140);
         }
       }
     }
   }
 
+  // Maj
+  if (x == 5) {
+
+    int N = 10;
+    int dag = 1;
+
+    for (int col = 0; col < 6; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        fill(255);
+        noStroke();
+        rect(600, 800, 2000, 1000);
+        if (dag == 32) {
+          dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 18", 75, 230);
+          text("Uge 19", 75, 410);
+          text("Uge 20", 75, 590);
+          text("Uge 21", 75, 770);
+          text("Uge 22", 75, 950);
+          text("Uge 23", 75, 1140);
+        }
+      }
+    }
+  }
+
+  // Juni
+  if (x == 6) {
+
+    int N = 10;
+    int dag = 1;
+
+    for (int col = 0; col < 6; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        fill(255);
+        noStroke();
+        rect(600, 800, 2000, 1000);
+        if (dag == 31) {
+          dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 23", 75, 230);
+          text("Uge 24", 75, 410);
+          text("Uge 25", 75, 590);
+          text("Uge 26", 75, 770);
+          text("Uge 27", 75, 950);
+          text("Uge 28", 75, 1140);
+        }
+      }
+    }
+  }
+
+  // Juli
+  if (x == 7) {
+
+    int N = 10;
+    int dag = 1;
+
+    for (int col = 0; col < 6; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        fill(255);
+        noStroke();
+        rect(600, 800, 2000, 1000);
+        if (dag == 32) {
+          dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 27", 75, 230);
+          text("Uge 28", 75, 410);
+          text("Uge 29", 75, 590);
+          text("Uge 30", 75, 770);
+          text("Uge 31", 75, 950);
+          text("Uge 32", 75, 1140);
+        }
+      }
+    }
+  }
+
+  // August
+  if (x == 8) {
+
+    int N = 10;
+    int dag = 1;
+
+    for (int col = 0; col < 6; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        fill(255);
+        noStroke();
+        rect(600, 800, 2000, 1000);
+        if (dag == 32) {
+          dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 31", 75, 230);
+          text("Uge 32", 75, 410);
+          text("Uge 33", 75, 590);
+          text("Uge 34", 75, 770);
+          text("Uge 35", 75, 950);
+          text("Uge 36", 75, 1140);
+        }
+      }
+    }
+  }
+
+  // September
+  if (x == 9) {
+
+    int N = 10;
+    int dag = 1;
+
+    for (int col = 0; col < 6; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        fill(255);
+        noStroke();
+        rect(600, 800, 2000, 1000);
+        if (dag == 31) {
+          dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 36", 75, 230);
+          text("Uge 37", 75, 410);
+          text("Uge 38", 75, 590);
+          text("Uge 39", 75, 770);
+          text("Uge 40", 75, 950);
+          text("Uge 41", 75, 1140);
+        }
+      }
+    }
+  }
+
+  // Oktober
+  if (x == 10) {
+
+    int N = 10;
+    int dag = 1;
+
+    for (int col = 0; col < 6; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        fill(255);
+        noStroke();
+        rect(600, 800, 2000, 1000);
+        if (dag == 32) {
+          dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 40", 75, 230);
+          text("Uge 41", 75, 410);
+          text("Uge 42", 75, 590);
+          text("Uge 43", 75, 770);
+          text("Uge 44", 75, 950);
+          text("Uge 45", 75, 1140);
+        }
+      }
+    }
+  }
+
+  // November
+  if (x == 11) {
+
+    int N = 10;
+    int dag = 1;
+
+    for (int col = 0; col < 6; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        fill(255);
+        noStroke();
+        rect(600, 800, 2000, 1000);
+        if (dag == 31) {
+          dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 44", 75, 230);
+          text("Uge 45", 75, 410);
+          text("Uge 46", 75, 590);
+          text("Uge 47", 75, 770);
+          text("Uge 48", 75, 950);
+          text("Uge 49", 75, 1140);
+        }
+      }
+    }
+  }
+
+  // December
+  if (x == 12) {
+
+    int N = 10;
+    int dag = 1;
+
+    for (int col = 0; col < 6; col++) {
+      for (int row = 0; row < 7; row++) {
+
+        textSize(20);
+        fill(0);
+        text(dag, row*2600/N+2200/N, col*1800/N+2200/N);
+        dag += 1;
+        fill(255);
+        noStroke();
+        rect(600, 800, 2000, 1000);
+        if (dag == 32) {
+          dag = 1;
+
+          // Ugenumre
+          textSize(18);
+          fill(0);
+          text("Uge 49", 75, 230);
+          text("Uge 50", 75, 410);
+          text("Uge 51", 75, 590);
+          text("Uge 52", 75, 770);
+          text("Uge 53", 75, 950);
+          text("Uge 1", 75, 1140);
+        }
+      }
+    }
+  }
 
   {
     // Ugedage
@@ -87,12 +460,4 @@ void draw() {
     text("L", 1520, 130);
     text("S", 1780, 130);
   }
-  // Ugenumre
-  textSize(18);
-  fill(0);
-  text("Uge 1", 75, 230);
-  text("Uge 2", 75, 410);
-  text("Uge 3", 75, 590);
-  text("Uge 4", 75, 770);
-  text("Uge 5", 75, 950);
 }
